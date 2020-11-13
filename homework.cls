@@ -16,7 +16,7 @@
 \LoadClass{article}
 
 
-\RequirePackage[margin=1.25in]{geometry}
+\RequirePackage[margin=1.00in]{geometry}
 \RequirePackage{hyperref}
 \RequirePackage{amsmath,amsfonts,amssymb,amsthm,mathtools,thmtools}
 \RequirePackage{kpfonts}
@@ -28,17 +28,20 @@
 
 \allowdisplaybreaks
 
-\colorlet{maincolor}{green!50!black}
+%\colorlet{maincolor}{green!50!black}
+\colorlet{maincolor}{black}
 \colorlet{secondcolor}{cyan!70!black}
 
 \newcommand*{\QEDB}{\null\nobreak \ensuremath{\qquad \square}}
 
 \declaretheoremstyle[
-  headfont=\color{maincolor}\normalfont\bfseries,
+  headfont=\color{secondcolor}\normalfont\bfseries,
+  notefont=\color{secondcolor}\normalfont\bfseries,
+  postheadspace=1em
 ]{plain}
 
 \declaretheoremstyle[
-  headfont=\color{maincolor}\normalfont\bfseries,
+  headfont=\color{secondcolor}\normalfont\bfseries,
 ]{definition}
 
 \declaretheoremstyle[
@@ -50,6 +53,7 @@
 \newtheorem{lemma}[theorem]{Lemma} %
 \newtheorem{proposition}[theorem]{Proposition} %
 \newtheorem*{corollary}{Corollary} %
+\newtheorem{problem}{Problem} %
 \theoremstyle{definition} %
 \newtheorem{definition}{Definition}[section] %
 \newtheorem{conjecture}{Conjecture}[section] %
